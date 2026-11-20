@@ -43,6 +43,6 @@ Clinician data is a combination of sample data and data from [CHADD](https://cha
 
 ### Project Structure
 
-- **Components:**map setup, clinician list, clinician cards, and filters
-- **Types:**interfaces, helper functions, and types
-- **Data:**JSON file of all clinicians
+- **Components:** map setup, clinician list, clinician cards, and filters
+- **Types:** interfaces, helper functions, and types
+- **Data:** JSON file of all clinicians

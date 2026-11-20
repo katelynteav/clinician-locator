@@ -8,6 +8,7 @@ import { formatAddress } from "../types/formatAddress.ts";
 import "./MapView.css";
 import { getClinicianKey } from "../types/clinicianKey.ts";
 
+declare const __CESIUM_ION_TOKEN__: string;
 interface Props {
     clinicians: Clinician[];
     focusRequest: FocusRequest | null;
@@ -46,7 +47,7 @@ function MapView({ clinicians, focusRequest }: Props){
             if (!container) return;
 
             // set Cesium ion access token 
-            Cesium.Ion.defaultAccessToken = import.meta.env.VITE_CESIUM_ION_TOKEN;
+            Cesium.Ion.defaultAccessToken = __CESIUM_ION_TOKEN__;
 
             // incorporate in a try/catch to prevent crashing if any errors occur
             try {
